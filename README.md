@@ -79,5 +79,8 @@ Tài nguyên sử dụng từ **Unsplash**, **Pexels**, **FreeSound** (CC0).
 - [Creative Commons – https://creativecommons.org](https://creativecommons.org)
 
 ---
-
+## Link 
+Github: https://github.com/HPhu-B2508410/ThucHanh05_Nhom6
+Microsoft Teams: https://teams.microsoft.com/l/channel/19%3AA08K3C1bv8cFvqqYLcbM45q8S1FA9zBoPRa5lLfdRTE1%40thread.tacv2/General?groupId=243717f9-3eaa-4332-b222-2fd5dfe235f2&tenantId=80a906da-b4ca-4ccb-81c3-d0b567529534
+Website: https://hphu-b2508410.github.io/ThucHanh05_Nhom6/
  *Hoàn thành bởi [Nhom 6] – Lớp [E08]*  
