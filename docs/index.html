@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nhiệm vụ 3.1</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Trình bày chuyên nghiệp hai file: video và infographic — Nhiệm vụ 3.1" />
+  <meta property="og:title" content="Nhiệm vụ 3.1" />
+  <meta property="og:description" content="Trình bày chuyên nghiệp hai file: video và infographic" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/HPhu-B2508410/ThucHanh05_Nhom6/master/docs/Infographic_Canva.png" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero" role="banner">
+      <div class="hero-inner">
+        <h1 class="title">Nhiệm vụ 3.1</h1>
+        <p class="subtitle">Trình bày chuyên nghiệp — video và infographic. Tương thích di động, truy cập tốt và mượt mà.</p>
+        <nav class="actions" aria-label="Tác vụ nhanh">
+          <a class="btn primary" href="#video-card">Xem video</a>
+          <a class="btn" href="#image-card">Xem infographic</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="content">
+      <section id="video-card" class="card media-card" aria-labelledby="video-title">
+        <div class="card-inner">
+          <h2 id="video-title">Video trình bày</h2>
+          <p class="muted">Phát trực tiếp, điều khiển âm thanh và tải về nếu cần.</p>
+
+          <!-- Video: using raw GitHub URL for direct access -->
+          <div class="media-wrapper">
+            <video
+              id="mainVideo"
+              class="responsive-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="Infographic_Canva.png"
+              aria-describedby="video-desc">
+              <source src="video.mp4" type="video/mp4" />
+              Trình duyệt của bạn không hỗ trợ thẻ video. Bạn có thể tải về video ở liên kết bên dưới.
+            </video>
+            <p id="video-desc" class="sr-only">Video minh họa nhiệm vụ 3.1 — sử dụng codec H.264.</p>
+          </div>
+
+          <div class="card-footer">
+            <a class="btn" href="https://raw.githubusercontent.com/HPhu-B2508410/ThucHanh05_Nhom6/master/docs/video.mp4" download> Tải video (MP4) </a>
+            <a class="btn ghost" target="_blank" rel="noopener" href="https://github.com/HPhu-B2508410/ThucHanh05_Nhom6/blob/master/docs/video.mp4"> Mở trên GitHub </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="image-card" class="card image-card" aria-labelledby="image-title">
+        <div class="card-inner">
+          <h2 id="image-title">Infographic</h2>
+          <p class="muted">Nhấn vào ảnh để phóng to (lightbox). Có thể tải về nguyên bản.</p>
+
+          <figure class="image-figure">
+            <button class="image-zoom" id="openLightbox" aria-label="Phóng to infographic">
+              <img
+                src="https://raw.githubusercontent.com/HPhu-B2508410/ThucHanh05_Nhom6/master/docs/Infographic_Canva.png"
+                alt="Infographic mô tả nội dung nhiệm vụ 3.1"
+                loading="lazy"
+              />
+            </button>
+            <figcaption class="sr-only">Infographic_Canva.png</figcaption>
+          </figure>
+
+          <div class="card-footer">
+            <a class="btn" href="https://raw.githubusercontent.com/HPhu-B2508410/ThucHanh05_Nhom6/master/docs/Infographic_Canva.png" download> Tải ảnh (PNG) </a>
+            <a class="btn ghost" target="_blank" rel="noopener" href="https://github.com/HPhu-B2508410/ThucHanh05_Nhom6/blob/master/docs/Infographic_Canva.png"> Mở trên GitHub </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <div>
+        <small>© Nhiệm vụ 3.1 — Trình bày bởi nhóm. Thiết kế responsive, truy cập và tối ưu băng thông.</small>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Xem infographic toàn màn hình">
+    <button class="lightbox-close" id="closeLightbox" aria-label="Đóng">✕</button>
+    <img id="lightboxImage" alt="Infographic toàn màn hình" src="" />
+    <a id="lightboxDownload" class="btn download-fixed" href="#" download>↓ Tải</a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
